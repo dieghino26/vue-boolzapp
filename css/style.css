@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: grey;
+}
 /*container*/
 .container{
     height: calc(100vh - 60px);
@@ -15,18 +18,17 @@
 }
 /*chat-list*/
 #chat-list{
-    background-color: yellow;
+    background-color: #fff;
     padding: 0;
 }
 .chat-list-header{
     height: 80px;
-    background-color: blueviolet;
+    background-color: #EAEAEA;
 }
 .chat-list-info{
     height: 80px;
-    background-color: aqua;
+    background-color: #8EDAFC;
 }
-
 
 /*chat*/
 #chat{
@@ -39,15 +41,16 @@
 
 /*chat header*/
 .chat-header{
-    background-color: green;
+    background-color: #EAEAEA;
     height: 80px;
 }
 /*chat main*/
 main{
     flex-grow: 1;
+    background-image: url(../img/mine.jpg);
 }
 /*chat footer*/
 .message-bar{
     height: 80px;
-    background-color: blue;
+    background-color: #F3EEEA;
 }
