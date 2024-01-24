@@ -53,4 +53,13 @@ main{
 .message-bar{
     height: 80px;
     background-color: #F3EEEA;
+    display: flex;
+}
+.emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: grey;
+    margin: 30px;
 }
