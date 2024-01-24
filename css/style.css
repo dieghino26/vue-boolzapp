@@ -4,8 +4,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*generics*/
 body{
     background-color: grey;
+}
+header{
+    height: 80px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
 }
 /*container*/
 .container{
@@ -21,10 +33,23 @@ body{
     background-color: #fff;
     padding: 0;
 }
-.chat-list-header{
-    height: 80px;
-    background-color: #EAEAEA;
+/*chat-list-header*/
+.options{
+    text-align: center;
+    gap: 10px;
 }
+.fa-message{
+    position: relative;
+    top: 1px;
+}
+.image{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+/*chat-list-info*/
 .chat-list-info{
     height: 80px;
     background-color: #8EDAFC;
