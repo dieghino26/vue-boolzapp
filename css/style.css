@@ -4,3 +4,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*container*/
+.container{
+    height: calc(100vh - 60px);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.row{
+    min-height: calc(100vh - 60px);
+}
+/*chat-list*/
+#chat-list{
+    background-color: yellow;
+    padding: 0;
+}
+.chat-list-header{
+    height: 80px;
+    background-color: blueviolet;
+}
+.chat-list-info{
+    height: 80px;
+    background-color: aqua;
+}
+
+
+/*chat*/
+#chat{
+    background-color: black;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+} 
+
+/*chat header*/
+.chat-header{
+    background-color: green;
+    height: 80px;
+}
+/*chat main*/
+main{
+    flex-grow: 1;
+}
+/*chat footer*/
+.message-bar{
+    height: 80px;
+    background-color: blue;
+}
