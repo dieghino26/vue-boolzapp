@@ -29,6 +29,9 @@ body{
     height: 80px;
     background-color: #8EDAFC;
 }
+.search{
+    list-style-type: none;
+}
 
 /*chat*/
 #chat{
@@ -45,7 +48,7 @@ body{
     height: 80px;
 }
 /*chat main*/
-main{
+.chat-main{
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
 }
