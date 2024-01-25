@@ -14,7 +14,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
-header img{
+.image img{
     height: 70px;
     width: 70px;
     border-radius: 50%;
@@ -32,6 +32,10 @@ header img{
 #chat-list{
     background-color: #fff;
     padding: 0;
+}
+.contact .image{
+    justify-content: flex-start;
+    margin: 0;
 }
 /*chat-list-header*/
 .options{
