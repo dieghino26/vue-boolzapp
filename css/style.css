@@ -32,14 +32,13 @@ header{
 #chat-list{
     background-color: #fff;
     padding: 0;
+
 }
 .contact .image{
     justify-content: flex-start;
     margin: 0;
 }
-.search{
-    list-style-type: none;
-}
+
 /*chat-list-header*/
 .options{
     text-align: center;
