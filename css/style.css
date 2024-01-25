@@ -1,69 +1,82 @@
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*generics*/
-body{
+body {
     background-image: linear-gradient(#009688 15%, #DADBD4 15%);
+    height: 100vh;
 }
-header{
+
+header {
     height: 80px;
     background-color: #EAEAEA;
     display: flex;
     justify-content: space-between;
 }
-.image img{
+
+.image img {
     height: 70px;
     width: 70px;
     border-radius: 50%;
 }
+
 /*container*/
-.container{
-    height: calc(100vh - 60px);
-    margin-top: 30px;
-    margin-bottom: 30px;
+#root .container {
+    height: 90%;
 }
-.row{
-    min-height: calc(100vh - 60px);
-}
+
 /*chat-list*/
-#chat-list{
+#chat-list {
     background-color: #fff;
     padding: 0;
 
 }
-.contact .image{
+
+.contact .image {
     justify-content: flex-start;
     margin: 0;
 }
 
+#contact-list {
+    overflow: auto;
+    max-height: 627px;
+}
+
+
+
 /*chat-list-header*/
-.options{
+.options {
     text-align: center;
     gap: 10px;
 }
-.fa-message{
+
+.fa-message {
     position: relative;
     top: 1px;
 }
-.image{
+
+.image {
     margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
+
 /*chat-list-info*/
-.chat-list-info{
+.chat-list-info {
     height: 90px;
     background-color: #8EDAFC;
     display: flex;
     align-items: center;
 
 }
-.fa-bell-slash{
+
+.fa-bell-slash {
     font-size: 1.3rem;
     background-color: #fff;
     border-radius: 50%;
@@ -71,44 +84,50 @@ header{
     color: #8EDAFC;
     padding: 20px;
 }
-.chat-list-info a{
+
+.chat-list-info a {
     color: gray;
 }
-.chat-list-info p{
+
+.chat-list-info p {
     margin: 0;
 }
 
 
 /*chat*/
-#chat{
+#chat {
     background-color: black;
     padding: 0;
     display: flex;
     flex-direction: column;
-    
-} 
+
+}
 
 /*chat header*/
-.chat-header{
+.chat-header {
     background-color: #EAEAEA;
     height: 80px;
 }
+
 /*chat main*/
-.chat-main{
+.chat-main {
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
 }
-.contact-status{
+
+.contact-status {
     color: gray;
     font-size: 0.8rem;
 }
+
 /*chat footer*/
-.message-bar{
+.message-bar {
     height: 80px;
     background-color: #F3EEEA;
     display: flex;
 }
-.emoji{
+
+.emoji {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,22 +137,27 @@ header{
 }
 
 /*MESSAGE*/
-.message-container{
+.message-container {
     display: flex;
 }
-.message-container.sent{
+
+.message-container.sent {
     justify-content: flex-end;
-} 
-.message-container.received{
+}
+
+.message-container.received {
     justify-content: flex-start;
-} 
-.message-container.sent .message{
+}
+
+.message-container.sent .message {
     background-color: #D5F9BA;
 }
-.message-container.received .message{
-    background-color:#fff ;
+
+.message-container.received .message {
+    background-color: #fff;
 }
-.message-container .message time{
+
+.message-container .message time {
     display: block;
     text-align: right;
     font-size: 11px;
