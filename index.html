@@ -77,7 +77,10 @@
                     <header class="chat-header">
                         <div class="image">
                             <img class="img-flud" src="img/avatar_1.jpg" alt="">
-                            <span>Name surname</span>
+                            <div>
+                                <span class="d-block">Name surname</span>
+                                <span class="contact-status">Online</span>
+                            </div>
                         </div>
                         <div class="options emoji">
                             <i class="fas fa-search"></i>
@@ -86,7 +89,27 @@
                         </div>
                     </header>
                     <!--chat messages-->
-                    <main class="chat-main">
+                    <main class="chat-main overflow-auto">
+                        <ul class="px-3">
+                            <li class="message-container p-3 sent">
+                                <div class="message p-2 rounded-3">
+                                    <p>Hai portato a spasso il cane?</p>
+                                    <time>10/01/2020 15:30:55</time>
+                                </div>
+                            </li>
+                            <li class="message-container p-3 sent">
+                                <div class="message p-2 rounded-3">
+                                    <p>Ricordati di stendere i panni</p>
+                                    <time>10/01/2020 15:50:00</time>
+                                </div>
+                            </li>
+                            <li class="message-container p-3 received">
+                                <div class="message p-2 rounded-3">
+                                    <p>Fatto tutto!</p>
+                                    <time>10/01/2020 16:15:22</time>
+                                </div>
+                            </li>
+                        </ul>
 
                     </main>
                     <!--add-message bar-->

@@ -68,7 +68,7 @@ header{
     font-size: 1.3rem;
     background-color: #fff;
     border-radius: 50%;
-    margin: 30px;
+    margin: 20px;
     color: #8EDAFC;
     padding: 20px;
 }
@@ -99,6 +99,10 @@ header{
     flex-grow: 1;
     background-image: url(../img/mine.jpg);
 }
+.contact-status{
+    color: gray;
+    font-size: 0.8rem;
+}
 /*chat footer*/
 .message-bar{
     height: 80px;
@@ -112,4 +116,27 @@ header{
     font-size: 1.5rem;
     color: grey;
     margin: 30px;
+}
+
+/*MESSAGE*/
+.message-container{
+    display: flex;
+}
+.message-container.sent{
+    justify-content: flex-end;
+} 
+.message-container.received{
+    justify-content: flex-start;
+} 
+.message-container.sent .message{
+    background-color: #D5F9BA;
+}
+.message-container.received .message{
+    background-color:#fff ;
+}
+.message-container .message time{
+    display: block;
+    text-align: right;
+    font-size: 11px;
+    color: gray;
 }
