@@ -110,7 +110,8 @@
                         <div class="emoji"><i class="fa-regular fa-smile"></i></div>
                         <div class="input-group my-2">
                             <input type="text" class="form-control" placeholder="Scrivi un messaggio"
-                                aria-label="Username" aria-describedby="basic-addon1">
+                                aria-label="Username" aria-describedby="basic-addon1" v-model="newTextMessage"
+                                @keyup.enter="sendMessage">
                         </div>
                         <div class="emoji"><i class="fas fa-microphone"></i></div>
                     </footer>

@@ -192,7 +192,8 @@ const app = createApp({
         ],
       }
     ],
-    currentId: 1
+    currentId: 1,
+    newTextMessage: ""
   }),
   computed: {
     currentContact() {
@@ -200,6 +201,29 @@ const app = createApp({
     },
     currentChat() {
       return this.currentContact.messages;
+    }
+  },
+  methods: {
+    sendMessage() {
+      if (!this.newTextMessage) return;
+      const newMessage = {
+        id: new Date().toISOString(),
+        date: new Date().toLocaleDateString(),
+        status: "sent",
+        text: this.newTextMessage
+      };
+      this.currentChat.push(newMessage);
+      this.newTextMessage = ""
+      setTimeout(() => {
+        const receivedMessage = {
+          id: new Date().toISOString(),
+          date: new Date().toLocaleDateString(),
+          status: "received",
+          text: "Ok!"
+        };
+
+        this.currentChat.push(receivedMessage);
+      }, 1000)
     }
   }
 });
