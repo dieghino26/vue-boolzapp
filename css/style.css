@@ -46,6 +46,10 @@ header {
     max-height: 627px;
 }
 
+#chat-list li:hover {
+    background-color: rgb(196, 195, 195);
+}
+
 
 
 /*chat-list-header*/

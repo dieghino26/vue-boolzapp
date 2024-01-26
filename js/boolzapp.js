@@ -191,8 +191,17 @@ const app = createApp({
           }
         ],
       }
-    ]
-  })
+    ],
+    currentId: 1
+  }),
+  computed: {
+    currentContact() {
+      return this.contacts.find((contact) => contact.id === this.currentId);
+    },
+    currentChat() {
+      return this.currentContact.messages;
+    }
+  }
 });
 
 app.mount("#root");
