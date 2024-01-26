@@ -193,7 +193,8 @@ const app = createApp({
       }
     ],
     currentId: 1,
-    newTextMessage: ""
+    newTextMessage: "",
+    searchChat: ""
   }),
   computed: {
     currentContact() {
@@ -201,6 +202,10 @@ const app = createApp({
     },
     currentChat() {
       return this.currentContact.messages;
+    },
+    filteredChats() {
+      const filteredArray = this.contacts.filter(chat => chat.name.toLowerCase().includes(this.searchChat));
+      return filteredArray
     }
   },
   methods: {

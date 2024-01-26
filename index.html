@@ -53,16 +53,17 @@
                             <a href="#">Attiva notifiche desktop</a>
                         </div>
                     </div>
+                    <!--search bar-->
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                            aria-describedby="basic-addon1">
+                            aria-describedby="basic-addon1" v-model.trim="searchChat">
                     </div>
                     <!--list container-->
 
                     <div id="contact-list" class="flex-grow-1">
                         <ul class="list-group list-group-flush m-0 p-0 ">
-                            <li type="button" v-for="contact in contacts" :key="contact.id"
+                            <li type="button" v-for="contact in filteredChats" :key="contact.id"
                                 @click="currentId = contact.id" class="list-group-item">
                                 <div class="contact">
                                     <div class="image">
